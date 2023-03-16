@@ -14,6 +14,7 @@ html {
   --menu-focus-color: #404bbf;
   --menu-eff-color: #ffffff;
   --fot-color: #e7e9fc;
+  --border-color: #8e8f99;
 }
 
 p,
@@ -209,6 +210,22 @@ focus {
   color: #434455;
 }
 
+.image-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--team-color);
+  /* border: 1px solid var( --menu-color); */
+  width: 264px;
+  height: 112px;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.info-wrap {
+  background-color: var(--head-color);
+}
+
 /* section 3  product*/
 
 .section-prod-title {
@@ -231,11 +248,10 @@ focus {
   display: flex;
   justify-content: center;
   gap: 24px;
- 
+  padding-top: 8px;
 }
 
 .ws-soc-item {
-  
   width: 40px;
   height: 40px;
 }
@@ -248,8 +264,6 @@ focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-
 }
 
 .sect-team {
@@ -282,6 +296,42 @@ focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--menu-color);
+}
+
+/* -------------section  5 customers------------------ */
+
+.customers {
+  padding-top: 120px;
+
+}
+
+
+.title-custom {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.custum-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.custom-item {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 168px;
+  height: 88px;
+gap: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
 }
 
 /* footer -----------------------------*/
