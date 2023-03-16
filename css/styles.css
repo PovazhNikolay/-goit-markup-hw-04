@@ -1,0 +1,472 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --brand-color: #2e2f42;
+  --team-color: #f4f4fd;
+  --head-color: #4d5ae5;
+  --menu-color: #434455;
+  --menu-focus-color: #404bbf;
+  --menu-eff-color: #ffffff;
+  --fot-color: #e7e9fc;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin-left: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--menu-color);
+}
+.text-down-line link {
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* заголовок -----------------------------*/
+
+.menu-list-item {
+  text-transform: uppercase;
+}
+.nav-logo {
+  display: flex;
+  margin-right: 76px;
+
+  /* ‹mod 3 */
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--head-color);
+  text-transform: uppercase;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.menu-contacts {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  gap: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--menu-color);
+}
+.mail-link {
+  color: var(--menu-color);
+  gap: 40px;
+}
+
+.menu-list-effect:hover {
+  color: var(--menu-color);
+  background-color: var(--menu-eff-color);
+}
+
+.menu-list-effect:focus {
+  color: var(--menu-focus-color);
+  background-color: var(--menu-eff-color);
+}
+.logo-black {
+  display: flex;
+  color: var(--brand-color);
+}
+
+.list {
+  list-style: none;
+}
+/* section 1  hero--------------------------*/
+
+.section-hero {
+  background-color: var(--brand-color);
+  padding: 188px 0;
+}
+
+.section-hero-title {
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+
+  color: var(--menu-eff-color);
+}
+
+.section-hero-btn {
+  border: transparent;
+  padding: 16px 32px;
+  text-transform: none;
+  color: var(--menu-eff-color);
+  background: var(--head-color);
+  cursor: pointer;
+}
+
+.btn-style {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 4px;
+}
+
+.section-hero-btn:hover,
+focus {
+  background-color: var(--menu-focus-color);
+  color: var(--menu-eff-color);
+}
+
+/* section 2 info -----------------------------*/
+
+.vis-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container-info {
+  width: 1158px;
+
+  margin: 0 auto;
+}
+
+.sect-info-title {
+  line-height: 1.07;
+}
+
+.section-info-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--brand-color);
+}
+
+.section-info-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #434455;
+}
+
+/* section 3  product*/
+
+.section-prod-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: var(--brand-color);
+}
+
+.sect-prod {
+  padding-bottom: 120px;
+}
+/* section 4 team -----------------------------*/
+.sect-team {
+  background-color: var(--team-color);
+}
+
+.section-team-main {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: var(--brand-color);
+}
+
+.section-team-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+  margin-bottom: 8px;
+}
+
+.section-team-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--menu-color);
+}
+
+/* footer -----------------------------*/
+
+.footer {
+  background-color: var(--brand-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-style {
+  display: block;
+  margin: 0;
+}
+
+.footer-description {
+  display: block;
+  margin-top: 16px;
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--fot-color);
+}
+
+.logo-white {
+  color: var(--team-color);
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--head-color);
+  text-transform: uppercase;
+}
+
+/* portfolio----------------------------- */
+
+.btn-font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  text-transform: none;
+  padding: 12px 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--fot-color);
+  border-radius: 4px;
+  background: var(--team-color);
+  color: var(--head-color);
+  cursor: pointer;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--brand-color);
+}
+
+.section-descr {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--menu-color);
+}
+
+.btn-font:hover,
+:focus {
+  background-color: var(--menu-focus-color);
+  color: var(--team-color);
+}
+
+/* modul 3----------- block------------------ */
+
+.border {
+  border-bottom: 1px solid var(--fot-color);
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0;
+}
+
+.step {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* <-- заголовок -- >  */
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  margin: 0;
+  gap: 40px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: auto;
+}
+.header-main {
+  border-bottom: 1px solid var(--fot-color);
+}
+
+.menu-list-main {
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  display: flex;
+  margin-left: auto;
+}
+
+/**------------- SECTION 1 HERO -------block--------*/
+
+.container-hero {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**------------- SECTION 2 INFO ------block---------*/
+
+.list-info {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+/**------------- SECTION 3 PRODUCT ------block---------*/
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-item {
+  display: flex;
+  text-align: center;
+  gap: 24px;
+  margin: 0;
+}
+
+.sect-team-info {
+  background-color: var(--menu-eff-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/**------------- FOOTER ------block---------*/
+
+/**------------- PORTFOLIO ------block---------*/
+
+/* кнопки  */
+
+.btn-padd {
+  padding-bottom: 120px;
+  padding-top: 96px;
+}
+
+.list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+
+  gap: 24px;
+}
+
+/**------------- PORTFOLIO ---section-Apply--block---------*/
+
+.list-apply {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin: 0;
+}
+
+.border-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-left: 1px solid var(--fot-color);
+  border-right: 1px solid var(--fot-color);
+  border-bottom: 1px solid var(--fot-color);
+  padding-left: 16px;
+  padding-right: 16px;
+}
