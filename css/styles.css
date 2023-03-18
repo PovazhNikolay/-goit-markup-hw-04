@@ -261,7 +261,7 @@ focus {
   height: 100%;
   border-radius: 50%;
 
-  background-color: var(--head-color); 
+  background-color: var(--head-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,9 +303,7 @@ focus {
 
 .customers {
   padding-top: 120px;
-
 }
-
 
 .title-custom {
   font-weight: 700;
@@ -338,14 +336,6 @@ focus {
 
 /* footer -----------------------------*/
 
-
-.foot-soc{
-display: flex;
-
-
-
-}
-
 .footer {
   background-color: var(--brand-color);
   padding-top: 100px;
@@ -353,25 +343,31 @@ display: flex;
   display: flex;
   justify-content: start;
   margin-left: auto;
-  
 }
 
-
-
-.foot-soc-list{
-  display:flex;
-  
-}
-
-.foot-block{
-  display: block;
-  align-items: center;
-  
+.foot-block {
+  display: flex;
+  align-items: start;
 }
 
 .footer-style {
   display: block;
   margin: 0;
+}
+
+.foot-item {
+  padding-left: 120px;
+}
+
+.foot-soc {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.foot-soc-list {
+  display: flex;
+  align-items: flex-start;
 }
 
 
