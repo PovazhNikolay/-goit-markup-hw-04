@@ -260,7 +260,8 @@ focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #dcdeec;
+
+  background-color: var(--head-color); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -320,6 +321,7 @@ focus {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  gap: 24px;
 }
 
 .custom-item {
@@ -329,23 +331,50 @@ focus {
   justify-content: space-between;
   width: 168px;
   height: 88px;
-gap: 24px;
+
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
 
 /* footer -----------------------------*/
 
+
+.foot-soc{
+display: flex;
+
+
+
+}
+
 .footer {
   background-color: var(--brand-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  justify-content: start;
+  margin-left: auto;
+  
+}
+
+
+
+.foot-soc-list{
+  display:flex;
+  
+}
+
+.foot-block{
+  display: block;
+  align-items: center;
+  
 }
 
 .footer-style {
   display: block;
   margin: 0;
 }
+
+
 
 .footer-description {
   display: block;
