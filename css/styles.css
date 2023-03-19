@@ -15,6 +15,7 @@ html {
   --menu-eff-color: #ffffff;
   --fot-color: #e7e9fc;
   --border-color: #8e8f99;
+  --bg-link-dark: rgba(255, 255, 255, 0.1);
 }
 
 p,
@@ -128,6 +129,9 @@ body {
   background-size: cover;
   flex-grow: 1;
   padding: 188px 0;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-hero-title {
@@ -216,6 +220,7 @@ focus {
   justify-content: center;
   background-color: var(--team-color);
   /* border: 1px solid var( --menu-color); */
+  border-radius: 4px;
   width: 264px;
   height: 112px;
   margin: 0;
@@ -223,7 +228,7 @@ focus {
 }
 
 .info-wrap {
-  background-color: var(--head-color);
+  /* background-color: var(--head-color); */
 }
 
 /* section 3  product*/
@@ -322,16 +327,21 @@ focus {
   gap: 24px;
 }
 
-.custom-item {
+.info-link :hover,
+.info-link:focus {
+  color: var(--brand-color);
+}
+
+.info-link {
   display: flex;
-  margin: 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 168px;
   height: 88px;
-
   border: 1px solid var(--border-color);
   border-radius: 4px;
+  fill: currentColor;
+  color: var(--border-color);
 }
 
 /* footer -----------------------------*/
@@ -362,15 +372,25 @@ focus {
 .foot-soc {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  color: var(--menu-eff-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .foot-soc-list {
   display: flex;
   align-items: flex-start;
+  margin: 0;
+  gap: 16px;
 }
 
-
+.foot-soc-bgcolor {
+  background-color: var(--bg-link-dark);
+}
 
 .footer-description {
   display: block;
