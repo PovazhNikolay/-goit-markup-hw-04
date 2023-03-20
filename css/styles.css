@@ -408,11 +408,8 @@ focus {
 
 .foot-soc-bgcolor :hover,
 .foot-soc-bgcolor :focus {
-  fill: var(rgb(71, 255, 129));
+  background-color: var rgba(255, 255, 255 0.1);
 }
-
-
- 
 
 .footer-description {
   display: block;
