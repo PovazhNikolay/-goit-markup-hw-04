@@ -320,24 +320,21 @@ focus {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-
 .custum-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   gap: 24px;
+  fill:currentColor ;
   fill: #2a2a2a;
 }
-
 .info-wrap {
 }
-
 .info-link :hover,
 .info-link:focus {
   fill: var(--menu-focus-color);
   border: 1px solid var(--menu-focus-color);
 }
-
 .info-link,
 .custum-list-link {
   display: flex;
@@ -347,13 +344,13 @@ focus {
   height: 88px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
+  fill: currentColor;
   fill: var(--border-color);
 }
-
 .custtum-list-icon {
+  fill: currentColor;
   fill: #2a2a2a;
 }
-
 .custum-list-link hover::after {
   fill: var(--menu-focus-color);
   border: 1px solid var(--menu-focus-color);
@@ -563,12 +560,10 @@ focus {
 .sect-team-info {
   background-color: var(--menu-eff-color);
   border-radius: 0px 0px 4px 4px;
-  
 
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px
-     rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-card {
