@@ -266,7 +266,7 @@ focus {
   height: 100%;
   border-radius: 50%;
 
-  background-color: var(--head-color);
+  background-color: var(--);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -325,18 +325,14 @@ focus {
   justify-content: space-between;
   margin: 0;
   gap: 24px;
-  fill:currentColor ;
-  fill: #2a2a2a;
 }
 .info-wrap {
 }
-.custum-list-link  :hover,
-.custum-list-link :focus {
+.info-link :hover,
+.info-link :focus {
   fill: var(--menu-focus-color);
-  border: 1px solid var(--menu-focus-color);
 }
-.info-link,
-.custum-list-link {
+.info-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,14 +343,12 @@ focus {
   fill: currentColor;
   fill: var(--border-color);
 }
-.custtum-list-icon {
-  fill: currentColor;
-  fill: #2a2a2a;
+
+.cust-bord:hover,
+.cust-bord :focus {
+  border-color: var(--menu-focus-color);
 }
-.custum-list-link hover::after {
-  fill: var(--menu-focus-color);
-  border: 1px solid var(--menu-focus-color);
-}
+
 /* footer -----------------------------*/
 
 .footer {
@@ -397,11 +391,32 @@ focus {
   align-items: flex-start;
   margin: 0;
   gap: 16px;
+  
 }
 
 .foot-soc-bgcolor {
-  background-color: var(--bg-link-dark);
+  background-color: var(--menu-color);
+
 }
+
+.foot-soc-bgcolor :hover, 
+.foot-soc-bgcolor :focus {
+  background-color: aquamarine;
+}
+
+
+.col-icon {
+  fill: currentColor ;
+
+ fill: var(--menu-eff-color)
+
+}
+
+/* .foot-soc-bgcolor :hover, */
+/* .foot-soc-bgcolor :focus { */
+  /* значки для футера */
+  /* fill: var(--menu-focus-color); */
+/* } */
 
 .footer-description {
   display: block;
