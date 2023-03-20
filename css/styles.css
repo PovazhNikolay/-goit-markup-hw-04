@@ -402,13 +402,12 @@ focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: currentColor;
   fill: var(--team-color);
 }
 
-.foot-soc-bgcolor :hover,
+.foot-soc-bgcolor:hover,
 .foot-soc-bgcolor :focus {
-  background-color: var rgba(255, 255, 255 0.1);
+  background-color: rgba(49, 208, 170, 1);
 }
 
 .footer-description {
@@ -612,6 +611,14 @@ focus {
   flex-wrap: wrap;
   gap: 48px 24px;
   margin: 0;
+}
+
+.list-apply :hover,
+:focus {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--menu-eff-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .border-card {
