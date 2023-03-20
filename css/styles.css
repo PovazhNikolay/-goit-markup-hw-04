@@ -265,11 +265,12 @@ focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-
-  background-color: var(--);
+  background-color: var(--menu-focus-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: currentColor;
+  fill: var(--team-color);
 }
 
 .sect-team {
@@ -391,32 +392,31 @@ focus {
   align-items: flex-start;
   margin: 0;
   gap: 16px;
-  
 }
 
 .foot-soc-bgcolor {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-color: var(--menu-color);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  fill: var(--team-color);
 }
 
-.foot-soc-bgcolor :hover, 
+.foot-soc-bgcolor :hover,
 .foot-soc-bgcolor :focus {
-  background-color: aquamarine;
+  background-color: var(rgb(71, 255, 129));
 }
 
 
-.col-icon {
-  fill: currentColor ;
-
- fill: var(--menu-eff-color)
-
-}
-
-/* .foot-soc-bgcolor :hover, */
-/* .foot-soc-bgcolor :focus { */
-  /* значки для футера */
-  /* fill: var(--menu-focus-color); */
-/* } */
+ .foot-soc-bgcolor :hover, 
+.foot-soc-bgcolor :focus { 
+/* значки для футера */
+fill: var(--menu-focus-color); 
+} 
 
 .footer-description {
   display: block;
