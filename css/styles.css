@@ -408,15 +408,11 @@ focus {
 
 .foot-soc-bgcolor :hover,
 .foot-soc-bgcolor :focus {
-  background-color: var(rgb(71, 255, 129));
+  fill: var(rgb(71, 255, 129));
 }
 
 
- .foot-soc-bgcolor :hover, 
-.foot-soc-bgcolor :focus { 
-/* значки для футера */
-fill: var(--menu-focus-color); 
-} 
+ 
 
 .footer-description {
   display: block;
