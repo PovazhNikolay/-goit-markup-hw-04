@@ -330,8 +330,8 @@ focus {
 }
 .info-wrap {
 }
-.info-link :hover,
-.info-link:focus {
+.custum-list-link  :hover,
+.custum-list-link :focus {
   fill: var(--menu-focus-color);
   border: 1px solid var(--menu-focus-color);
 }
