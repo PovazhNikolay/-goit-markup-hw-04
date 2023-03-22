@@ -100,12 +100,10 @@ body {
 
 .header-item :hover {
   color: var(--menu-color);
- 
 }
 
 .header-item :focus {
   color: var(--menu-focus-color);
- 
 }
 .logo-black {
   display: flex;
@@ -127,9 +125,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  flex-grow: 1;
   padding: 188px 0;
-  width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -202,6 +198,7 @@ focus {
   line-height: 1.4;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-top: 8px;
   color: var(--brand-color);
 }
 
@@ -224,7 +221,6 @@ focus {
   width: 264px;
   height: 112px;
   margin: 0;
-  padding-bottom: 8px;
 }
 
 .info-wrap {
@@ -253,7 +249,7 @@ focus {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .ws-soc-item {
@@ -265,12 +261,15 @@ focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--menu-focus-color);
+  background-color: var(--head-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: currentColor;
   fill: var(--team-color);
+}
+
+.ws-soc-link:hover {
+  background-color: var(--menu-focus-color);
 }
 
 .sect-team {
@@ -323,15 +322,14 @@ focus {
 }
 .custum-list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   gap: 24px;
 }
-.info-wrap {
-}
-.info-link :hover,
-.info-link :focus {
+
+.info-link , .cust-bord :hover,
+.info-link , .cust-bord :focus {
   fill: var(--menu-focus-color);
+  border-color: var(--menu-focus-color);
 }
 .info-link {
   display: flex;
@@ -348,6 +346,7 @@ focus {
 .cust-bord:hover,
 .cust-bord :focus {
   border-color: var(--menu-focus-color);
+  fill: var(--menu-focus-color);
 }
 
 /* footer -----------------------------*/
@@ -372,13 +371,11 @@ focus {
 }
 
 .foot-item {
-  padding-left: 120px;
+  margin-left: 120px;
 }
 
 .foot-soc {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 16px;
+  
   color: var(--menu-eff-color);
   font-family: "Roboto";
   font-style: normal;
@@ -389,9 +386,9 @@ focus {
 
 .foot-soc-list {
   display: flex;
-  align-items: flex-start;
   margin: 0;
   gap: 16px;
+  margin-top: 16px;
 }
 
 .foot-soc-bgcolor {
@@ -479,9 +476,6 @@ focus {
   background: #404bbf;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-
-
 }
 
 /* modul 3----------- block------------------ */
@@ -610,8 +604,6 @@ focus {
   gap: 24px;
 }
 
-
-
 /**------------- PORTFOLIO ---section-Apply--block---------*/
 
 .list-apply {
@@ -621,10 +613,11 @@ focus {
   margin: 0;
 }
 
-.list-apply :hover,
+
+
+.card-eff :hover,
 :focus {
-  border-radius: 0px 0px 4px 4px;
-  background: var(--menu-eff-color);
+ 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
